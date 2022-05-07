@@ -1,0 +1,9 @@
+{
+    "name": "Clean Tab",
+    "version": "1.0.0",
+    "default_locale": "en_US",
+    "description": "Buy Me a coffee <a href='https://buymeacoffee.com/happer64bit'>Here</a>",
+    "chrome_url_override": {
+        "nametab": "src/pages/index.html"
+    }
+}

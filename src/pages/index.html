@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            background-image: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: sans-serif;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-end {
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .field {
+            padding: 15px;
+            width: 50rem;
+            border: none;
+            outline: none;
+            caret-color: black;
+        }
+        .field::placeholder {
+            color: black;
+        }
+        @media screen and (max-width: 600px){
+            .field {
+                width: 20rem;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 1000px) {
+            .field {
+                width: 30rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="flex">
+            <span id="date"></span>
+            <span id="time"></span>
+        </div>
+        <div class="flex-end flex" style="height: 17rem; color: #00C6CF;">
+            <form action="https://google.com/search">
+                <div class="border-input">
+                    <input type="text" id="url" placeholder="Search Google" name="q" class="field">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
