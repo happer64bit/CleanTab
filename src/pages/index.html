@@ -4,47 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tab</title>
-    <style>
-        html {
-            height: 100%;
-        }
-        body {
-            background-image: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: white;
-            font-family: sans-serif;
-        }
-        .flex {
-            display: flex;
-        }
-        .flex-end {
-            align-items: flex-end;
-            justify-content: center;
-        }
-        .field {
-            padding: 15px;
-            width: 50rem;
-            border: none;
-            outline: none;
-            caret-color: black;
-        }
-        .field::placeholder {
-            color: black;
-        }
-        @media screen and (max-width: 600px){
-            .field {
-                width: 20rem;
+    <link rel="stylesheet" href="../styles/index.page.css">
+    <link rel="stylesheet" href="../fontawsome/css/all.min.css">
+    <script src="../jquery/jquery.main.js"></script>
+    <script src="../services/storage.js"></script>
+    <script src="../services/search.js"></script>
+    <script src="../services/event.js"></script>
+    <script>
+        function Dosearch(ele) {
+            if(event.key === 'Enter') {
+                Search(ele.value)
             }
         }
-        @media screen and (min-width: 600px) and (max-width: 1000px) {
-            .field {
-                width: 30rem;
-            }
+        function submitForm() {
+            const searchEngine = document.getElementById("search-engine");
+            setValue("Engine", searchEngine.value)
         }
-    </style>
+    </script>
 </head>
 <body>
     <div id="app">
@@ -53,12 +29,36 @@
             <span id="time"></span>
         </div>
         <div class="flex-end flex" style="height: 17rem; color: #00C6CF;">
-            <form action="https://google.com/search">
+            <div id="form">
                 <div class="border-input">
-                    <input type="text" id="url" placeholder="Search Google" name="q" class="field" autocomplete="off">
+                    <input type="text" id="url" placeholder="Search & Explore" name="q" class="field" autocomplete="off" onkeydown="Dosearch(this)"/>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
+    <div id="alert-screen">
+        <div id="alert-box" class="bg-white">
+            <div>
+                <h1>Settings</h1>
+                <div class="scroll">        
+                    <lable>Search Engine</lable>
+                    <select id="search-engine">
+                        <option value="Google">Google</option>
+                        <option value="Bing">Bing</option>
+                        <option value="DuckDuckGo">DuckDuckGo</option>
+                    </select>
+                </div>
+                <div class="right">
+                    <button class="outline-btn" onclick="$('#alert-screen').hide()">Cancel</button>
+                    <button class="btn" onclick="submitForm(); $('#alert-screen').hide()" id="done-btn">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="icon" onclick="document.getElementById('alert-screen').style.display = 'flex'">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </span>
+    </footer>
 </body>
 </html>

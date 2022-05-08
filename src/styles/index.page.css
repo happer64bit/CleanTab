@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+body {
+    src: url("../font/Roboto-Regular.ttf");
+    background-image: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.flex {
+    display: flex;
+}
+.flex-end {
+    align-items: flex-end;
+    justify-content: center;
+}
+.field {
+    padding: 15px;
+    width: 50rem;
+    border: none;
+    outline: none;
+    caret-color: black;
+}
+.field::placeholder {
+    color: black;
+}
+.icon {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+}
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.211);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    right: 0;
+}
+#alert-screen {
+    background-color: rgba(0, 0, 0, 0.585);
+    width: 100%;
+    position: fixed;
+    display: none;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+}
+.bg-white {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.alert-right {
+    text-align: right;
+}
+#alert-box {
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 30px;
+    height: 21rem;
+}
+.scroll {
+    height: 230px;
+    overflow-y: scroll;
+}
+.outline-btn {
+    border: 1px solid #3700B3;
+    color: #3700B3;
+    padding: 10px 16px;
+    background-color: #00000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn {
+    background-color: #3700B3;
+    color: white;
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.right {
+    text-align: right;
+    padding: 10px;
+}
+@media screen and (max-width: 600px){
+    .field {
+        width: 20rem;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .field {
+        width: 30rem;
+    }
+}
