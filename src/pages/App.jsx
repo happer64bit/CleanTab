@@ -1,5 +1,5 @@
 import '../styles/index.page.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const onEnter = (event) => {
     if (event.key === 'Enter') {
@@ -15,6 +15,7 @@ const SearchGoogle = (event) => {
 
 const App = () => {
     const [ openSettings, setOpenSettings] = useState(false)
+    const [ time, setTime ] = useState();
     const SettingPopuponClick = () => {
         if(openSettings == true)
         {
@@ -25,9 +26,16 @@ const App = () => {
             setOpenSettings(true)
         }
     }
+    useEffect(() => {
+        var date = new Date()
+        setTime(`${date.getHours()}:${mins = ('0'+date.getMinutes()).slice(-2)}`)
+    })
     return (
         <div className="app">
             <div className="flex flex-end">
+                <h1 className='clock'>{time}</h1>
+            </div>
+            <div className="flex flex-center">
                 <input type='text' placeholder='Search on Google' className='field-search' onKeyPress={onEnter}/>
             </div>
         </div>

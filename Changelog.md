@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 1.0.3 | 6/8/2022
+* Added Clock
+
 ## Version 1.0.2 | 6/8/2022
 * Change Famework to **React**
 * Fixed Search not working on tab
