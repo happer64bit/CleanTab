@@ -28,7 +28,7 @@ const App = () => {
     return (
         <div className="app">
             <div className="flex flex-end">
-                <input type='text' placeholder={'Search on '} className='field-search' onKeyPress={onEnter}/>
+                <input type='text' placeholder='Search on Google' className='field-search' onKeyPress={onEnter}/>
             </div>
         </div>
     )
