@@ -1,4 +1,4 @@
-import shutil
+import shutil, os
 
 shutil.make_archive("build/CleanTab", 'zip', "bundle/")
 print("Builded to build/ folder")
