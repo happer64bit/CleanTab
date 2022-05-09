@@ -38,6 +38,7 @@ html, body {
     color: black;
     border: none;
     opacity: 0.6;
+    border: 1px #d1d5db solid;
     background-color: #d1d5db;
     padding: 12px;
     width: 60%;
@@ -47,6 +48,10 @@ html, body {
 .field-search::placeholder {
     color: black;
     box-sizing: border-box;
+}
+
+.field-search:focus {
+    border: 1px solid black;
 }
 
 footer img {
