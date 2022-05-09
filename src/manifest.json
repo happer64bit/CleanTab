@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "Buy Me a coffee <a href='https://buymeacoffee.com/happer64bit'>Here</a>",
     "chrome_url_overrides": {
-        "newtab": "pages/index.html"
+        "newtab": "index.html"
     },
-    "manifest_version": 3,
+    "manifest_version": 2,
     "permissions": [
         "storage"
     ]
