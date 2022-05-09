@@ -5,8 +5,8 @@ const onEnter = (event) => {
     if (event.key === 'Enter') {
         SearchGoogle(event)
     }
-    
 }
+
 
 const SearchGoogle = (event) => {
     // API https://google.com/search?q={item}
@@ -28,7 +28,7 @@ const App = () => {
     }
     useEffect(() => {
         var date = new Date()
-        setTime(`${date.getHours()}:${mins = ('0'+date.getMinutes()).slice(-2)}`)
+        setTime(`${String(date.getHours()).padStart(2, 0)}:${String(date.getMinutes()).padStart(2, 0)}`)
     })
     return (
         <div className="app">
