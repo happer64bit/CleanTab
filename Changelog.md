@@ -1,5 +1,8 @@
 # Change Log
 
+## Version 1.0.4 | 7/8/2022
+* Fixed "#" Search not working
+
 ## Version 1.0.3 | 6/8/2022
 * Added Clock
 

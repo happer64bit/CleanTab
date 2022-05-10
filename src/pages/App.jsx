@@ -10,7 +10,8 @@ const onEnter = (event) => {
 
 const SearchGoogle = (event) => {
     // API https://google.com/search?q={item}
-    window.open(`https://google.com/search?q=${event.target.value}`, "_blank")
+    const q = event.target.value.replace("#", "%23");
+    window.open(`https://google.com/search?q=${q}`, "_blank")
 }
 
 const App = () => {
