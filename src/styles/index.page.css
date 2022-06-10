@@ -46,13 +46,11 @@ html, body {
 }
 
 .field-search::placeholder {
-    color: black;
+    color: gray;
     box-sizing: border-box;
+    opacity: 100%;
 }
 
-.field-search:focus {
-    border: 1px solid black;
-}
 
 footer img {
     padding: 20px 20px;
@@ -119,13 +117,4 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
-}
-
-@keyframes placeholder-animation {
-    0% {
-        min-width: 100%;
-    }
-    100% {
-        min-width: 0;
-    }
 }

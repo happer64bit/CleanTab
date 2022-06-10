@@ -7,7 +7,6 @@ const onEnter = (event) => {
     }
 }
 
-
 const SearchGoogle = (event) => {
     // API https://google.com/search?q={item}
     const q = event.target.value.replace("#", "%23");
@@ -15,18 +14,7 @@ const SearchGoogle = (event) => {
 }
 
 const App = () => {
-    const [ openSettings, setOpenSettings] = useState(false)
     const [ time, setTime ] = useState();
-    const SettingPopuponClick = () => {
-        if(openSettings == true)
-        {
-            setOpenSettings(false)
-        }
-        else
-        {
-            setOpenSettings(true)
-        }
-    }
     useEffect(() => {
         var date = new Date()
         setTime(`${String(date.getHours()).padStart(2, 0)}:${String(date.getMinutes()).padStart(2, 0)}`)
@@ -39,6 +27,9 @@ const App = () => {
             <div className="flex flex-center">
                 <input type='text' placeholder='Search on Google' className='field-search' onKeyPress={onEnter}/>
             </div>
+            <footer>
+                <img src={require("../icons/settings.svg")} alt="" srcset="" width={40}/>
+            </footer>
         </div>
     )
 }
