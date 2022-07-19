@@ -1,7 +1,7 @@
 # Tab Theme For Chrome
 
 > **Warning**
-> This project is discontinue by author
+> This project is discontinued by author
 
 <a href="https://github.com/happer64bit/CleanTab/releases">Download Extension here</a>
 
