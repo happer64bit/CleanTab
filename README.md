@@ -1,7 +1,7 @@
 # Tab Theme For Chrome
 
 > **Warning**
-> One Update might take 1 or 2 month
+> This project is discontinue by author
 
 <a href="https://github.com/happer64bit/CleanTab/releases">Download Extension here</a>
 
