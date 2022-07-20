@@ -6,7 +6,7 @@
         "newtab": "index.html"
     },
     "manifest_version": 3,
-    "permissions": [
-        "storage"
-    ]
+    "icons": {
+        "128": "res/icon_128.png"
+    }
 }
