@@ -11,7 +11,10 @@
 ### You need to install npm and nodejs on your computer to bundle source code to use *or* download extension at releases
 ```bash
 # To build
-npm run build
+npm install                       # install required library
+npm run build                     # bundle nodejs to javascript
+cp scripts/manifest.json bundle/  # Copy manifest.json to bundle folder
+python scripts/build-zip.py       # build zip file
 ```
 
 > version 1.0.4
