@@ -1,6 +1,11 @@
 # Change Log
 
+## Version 1.06  | 8/3/2022
+* Updated UI
+* Fix Some Bugs
+
 ## Version 1.0.5 | 6/10/2022
+* Removed .bundle folder
 * Fixed Performance and File Size
 
 ## Version 1.0.4 | 7/8/2022

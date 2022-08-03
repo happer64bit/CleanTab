@@ -35,20 +35,19 @@ html, body {
 }
 
 .field-search {
+    font-weight: bold;
     color: black;
     border: none;
-    opacity: 0.6;
-    border: 1px #d1d5db solid;
-    background-color: #d1d5db;
+    border: 1px #d1d5db00 solid;
+    background-color: #d1d5db7a;
     padding: 12px;
     width: 60%;
+    color: rgb(225, 225, 225);
     outline: none;
 }
 
 .field-search::placeholder {
-    color: gray;
-    box-sizing: border-box;
-    opacity: 100%;
+    color: white;
 }
 
 

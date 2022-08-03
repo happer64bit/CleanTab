@@ -9,7 +9,9 @@ const onEnter = (event) => {
 
 const SearchGoogle = (event) => {
     // API https://google.com/search?q={item}
+    // *fix searching # in search bar not working*
     const q = event.target.value.replace("#", "%23");
+    // TODO: will be fixed in next update
     window.open(`https://google.com/search?q=${q}`, "_blank")
 }
 
@@ -27,9 +29,6 @@ const App = () => {
             <div className="flex flex-center">
                 <input type='text' placeholder='Search on Google' className='field-search' onKeyPress={onEnter}/>
             </div>
-            <footer>
-                <img src={require("../icons/settings.svg")} alt="" srcset="" width={40}/>
-            </footer>
         </div>
     )
 }

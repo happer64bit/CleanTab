@@ -1,7 +1,4 @@
-# Tab Theme For Chrome
-
-> **Warning**
-> This project is discontinued by author
+# Tab Theme For Chrome (v1.0.6)
 
 <a href="https://github.com/happer64bit/CleanTab/releases">Download Extension here</a>
 
@@ -16,8 +13,6 @@ npm run build                     # bundle nodejs to javascript
 cp scripts/manifest.json bundle/  # Copy manifest.json to bundle folder
 python scripts/build-zip.py       # build zip file
 ```
-
-> version 1.0.4
 
 ## ScreenShots
 
