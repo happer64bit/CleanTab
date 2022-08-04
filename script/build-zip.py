@@ -1,9 +1,7 @@
-import shutil, os
-
-os.mkdir("build")
+import shutil
 
 shutil.copy("res", "bundle/")
 
-shutil.make_archive("build/CleanTab", 'zip', "bundle/")
+shutil.make_archive("build/CleanTab", 'zip', ".")
 
-print("Builded to build/ folder")
+print("Builded A zip file")

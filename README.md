@@ -4,15 +4,35 @@
 
 <a href="https://www.buymeacoffee.com/happer64bit" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## Build
-### You need to install npm and nodejs on your computer to bundle source code to use *or* download extension at releases
-```bash
-# To build
-npm install                       # install required library
-npm run build                     # bundle nodejs to javascript
-cp scripts/manifest.json bundle/  # Copy manifest.json to bundle folder
-python scripts/build-zip.py       # build zip file
+# Build
+
+## Windows
+```powershell
+cd CleanTab
+
+npm install
+
+build-windows
+
 ```
+## Linux, Mac, Unix
+```bash
+cd CleanTab
+
+npm install
+
+make build
+```
+
+## Building Zip File
+```bash
+# Windows
+py.exe scripts/build-zip.py
+
+# Linux, Mac, Unix
+python scripts/build-zip.py
+```
+
 
 ## ScreenShots
 
