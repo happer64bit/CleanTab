@@ -1,7 +1,7 @@
 # Change Log
 
 ## Version 1.0.7  | 8/8/2022
-* Fixed extension size
+* Bundle script will remove *.map files
 
 ## Version 1.0.6  | 8/3/2022
 * Updated UI
