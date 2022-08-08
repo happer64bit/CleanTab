@@ -1,4 +1,4 @@
-# Tab Theme For Chrome (v1.0.6)
+# Tab Theme For Chrome (v1.0.7)
 
 <a href="https://github.com/happer64bit/CleanTab/releases">Download Extension here</a>
 
