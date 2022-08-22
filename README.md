@@ -22,6 +22,7 @@ cd CleanTab
 npm install
 
 make build
+make fix-file-size # For deleting *.map files
 ```
 
 ## Building Zip File
