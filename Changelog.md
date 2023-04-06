@@ -1,6 +1,6 @@
 # Change Log
 
-## Version 1.0.7  | 31/3/2023
+## Version 1.0.8  | 31/3/2023
 * Remove Default Background And Added Gradient Background Support
 
 ## Version 1.0.7  | 8/8/2022
